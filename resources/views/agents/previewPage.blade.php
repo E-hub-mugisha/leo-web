@@ -4,7 +4,7 @@
 
 @include('includes.header')
 
-<section>
+<section class="bg-light-seegreen">
     <div class="container">
 
         <div class="row justify-content-center">
@@ -74,9 +74,11 @@
                         </div>
 
                     </div>
-                    <a type="button" href="/became-an-agent/create-step1" class="btn btn-warning">Back to Step 1</a>
-                    <a type="button" href="/became-an-agent/create-step2" class="btn btn-warning">Back to Step 2</a>
-                    <button type="submit" class="btn btn-primary">Create Product</button>
+
+                    <div class="row">
+                        <a type="button" href="/became-an-agent/create-step4" class="col-6 btn btn-warning">Back to Step 4</a>
+                        <button type="submit" class="col-6 btn btn-primary">Save info</button>
+                    </div>
                 </form>
             </div>
 

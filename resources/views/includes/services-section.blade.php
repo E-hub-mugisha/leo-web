@@ -26,7 +26,7 @@
                                 <p class="m-0">Build a well-trained network in no time. We help you expand your market reach with no further recruitment.</p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/agent_network_accelerator" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                                 <p class="m-0">Leave it to us. At DDIN, we recruit, train, and manage agents' networks requirements for your business.</p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/agent_network_management" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                 <p class="m-0">Want to trade with specific groups of clients? We will help you, DDIN customize your market niche with a specific targeted market segmentation</p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/community_agent_network" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                 <p class="m-0">DDIN's below-the-line strategy makes market breakthrough hassle-free. Take your business straight to potential customers.</p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/Below_Line_Market_Activation" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                 <p class="m-0">Distribute to the last mile. Place your products as near as your customers would walk.</p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/Distribution_to_the_last_Mile" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                                 <p class="m-0">adequate float, reliable cash flow, seamless transactions. </p>
                             </div>
                             <div class="article-links">
-                                <a href="#" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                                <a href="/Liquidity_Float_Management" class="text-seegreen font--bold">Continue Reading <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>

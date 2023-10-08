@@ -11,7 +11,7 @@
             <div class="col-xl-8 col-lg-10 col-12">
                 <h1 class="text-light mb-4">Unlock the power today <br>Network of the Best</h1>
                 <p class="fs-5 fw-light text-light mb-4">Join now to be a part of our thriving community and take your journey to the next level</p>
-                <a href="/became-an-agent/create-step1" class="btn btn-primary px-5">Join Now...</a>
+                <a href="/agent/profile" class="btn btn-primary px-5">Join Now...</a>
             </div>
         </div>
     </div>

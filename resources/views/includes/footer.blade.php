@@ -6,7 +6,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="footer-widget">
-                        <a href="/"><img src="assets/img/logo.png" class="img-footer" alt=""></a>
+                        <a href="/"><img src="{{ asset('assets/img/logo.png')}}" class="img-footer" alt=""></a>
                         <div class="footer-add">
                             <p>we specialize in creating seamless connections and optimizing networks to keep your business running smoothly</p>
                         </div>
@@ -25,12 +25,12 @@
                     <div class="footer-widget">
                         <h4 class="widget-title font--bold">Our Services</h4>
                         <ul class="footer-menu">
-                            <li><a href="JavaScript:Void(0);">Agent Network Accelerator Program</a></li>
-                            <li><a href="JavaScript:Void(0);">Agent Network Management Program</a></li>
-                            <li><a href="JavaScript:Void(0);">Community Agent Network</a></li>
-                            <li><a href="JavaScript:Void(0);">Distribution to the last Mile</a></li>
-                            <li><a href="JavaScript:Void(0);">Liquidity & Float Management</a></li>
-                            <li><a href="JavaScript:Void(0);">Below the Line & Market Activation</a></li>
+                            <li><a href="/agent_network_accelerator">Agent Network Accelerator Program</a></li>
+                            <li><a href="/agent_network_management">Agent Network Management Program</a></li>
+                            <li><a href="/community_agent_network">Community Agent Network</a></li>
+                            <li><a href="/Distribution_to_the_last_Mile">Distribution to the last Mile</a></li>
+                            <li><a href="/Liquidity_Float_Management">Liquidity & Float Management</a></li>
+                            <li><a href="/Below_Line_Market_Activation">Below the Line & Market Activation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,7 +55,6 @@
                             <li><a href="/">Home</a></li>
                             <li><a href="/about">About Us</a></li>
                             <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="/services">Services</a></li>
                             <li><a href="/became-an-agent">Became an agent</a></li>
                         </ul>
                     </div>

@@ -6,8 +6,8 @@
     <div class="container">
         <nav id="navigation" class="navigation navigation-landscape">
             <div class="nav-header">
-                <a class="nav-brand static-logo" href="#"><img src="assets/img/logo-light.png" class="logo" alt=""></a>
-                <a class="nav-brand fixed-logo" href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
+                <a class="nav-brand static-logo" href="#"><img src="{{ asset('assets/img/logo-light.png')}}" class="logo" alt=""></a>
+                <a class="nav-brand fixed-logo" href="#"><img src="{{ asset('assets/img/logo.png')}}" class="logo" alt=""></a>
                 <div class="nav-toggle"></div>
                 <div class="mobile_nav">
                     <ul>
@@ -27,7 +27,7 @@
                             
                             <h6 class="lh-base fs-6 font--bold m-0">Services</h6>
                             <li>
-                                <a href="index.html">
+                                <a href="/agent_network_accelerator">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-success text-success fs-4"><i class="fa-solid fa-mug-hot"></i></div>
                                         <div class="mega-last ps-2">
@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-2.html">
+                                <a href="/agent_network_management">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-warning text-warning fs-4"><i class="fa-brands fa-slack"></i></div>
                                         <div class="mega-last ps-2">
@@ -47,7 +47,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-3.html">
+                                <a href="/community_agent_network">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-info text-info fs-4"><i class="fa-solid fa-envelope-open-text"></i></div>
                                         <div class="mega-last ps-2">
@@ -57,7 +57,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-4.html">
+                                <a href="/Distribution_to_the_last_Mile">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-purple text-purple fs-4"><i class="fa-solid fa-eye"></i></div>
                                         <div class="mega-last ps-2">
@@ -67,7 +67,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-5.html">
+                                <a href="/Liquidity_Float_Management">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-seegreen text-seegreen fs-4"><i class="fa-brands fa-dropbox"></i></div>
                                         <div class="mega-last ps-2">
@@ -77,7 +77,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-6.html">
+                                <a href="/Below_Line_Market_Activation">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-danger text-danger fs-4"><i class="fa-solid fa-briefcase"></i></div>
                                         <div class="mega-last ps-2">

@@ -3,10 +3,10 @@
 @section('content')
 
 @include('includes.header')
-<section>
+<section class="bg-light-seegreen">
     <div class="container">
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-9">
                 <!-- Basic Info -->
                 <div class="dash-wrapsw card border-0 rounded-4 py-4 mb-4">
@@ -71,7 +71,10 @@
                                     </ul>
                                 </div>
                                 @endif
-                                <button type="submit" class="btn btn-primary">Add agent Image</button>
+                                <div class="row form-btn">
+                                    <a type="button" href="/became-an-agent/create-step1" class="col-6 btn btn-warning">Back to Step 1</a>
+                                    <button type="submit" class="col-6 btn btn-primary">Next</button>
+                                </div>
                             </div>
                         </form>
                     </div>

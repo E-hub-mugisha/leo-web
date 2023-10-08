@@ -49,7 +49,7 @@
     <script src="{{ asset('assets/js/shuffle.min.js')}}"></script>
     <script src="{{ asset('assets/js/wow.js')}}"></script>
     <script src="{{ asset('assets/js/lunar.js')}}"></script>
-
+    <script src="{{ asset('assets/js/form-agent.js')}}"></script>
 
     <script src="{{ asset('assets/js/custom.js')}}"></script>
     <!-- ============================================================== -->

@@ -4,22 +4,22 @@
 
 @include('includes.header')
 
-<section>
+<section class="bg-light-seegreen">
     <div class="container">
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-9">
                 <!-- Basic Info -->
                 <div class="dash-wrapsw card border-0 rounded-4 py-4 mb-4">
                     <div class="card-headers border-0 py-4 px-4 pb-0 pt-1">
-                        <h4><i class="fa-regular fa-user text-primary me-2"></i>Basic info</h4>
+                        <h4><i class="fa-regular fa-user text-primary me-2"></i>More info</h4>
                     </div>
                     <div class="card-body px-4">
                         <form action="/became-an-agent/create-step4" method="post">
                             {{ csrf_field() }}
 
                             <div class="row g-3 g-sm-4 mt-0 mt-lg-2">
-                                
+
                                 <div class="col-sm-12">
                                     <div class="">
                                         <label class="form-label">Kugirango ubusabe bwanyu bukorwe, murasabwa kubanza kwishura amafaranga y' u Rwanda ibihumbi makumyabiri (20.000Rwf) kuri MOPay code 363386 ibaruye kuri DISABILITY DIGITAL INCLUSION</label>
@@ -67,7 +67,10 @@
                                     </ul>
                                 </div>
                                 @endif
-                                <button type="submit" class="btn btn-primary">Add agent Image</button>
+                                <div class="row">
+                                    <a type="button" href="/became-an-agent/create-step3" class="col-6 btn btn-warning">Back to Step 3</a>
+                                    <button type="submit" class="col-6 btn btn-primary">Preview info</button>
+                                </div>
                             </div>
                         </form>
                     </div>

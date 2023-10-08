@@ -4,18 +4,18 @@
 
 @include('includes.header')
 
-<section>
+<section class="bg-light-seegreen">
     <div class="container">
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-9">
                 <!-- Basic Info -->
                 <div class="dash-wrapsw card border-0 rounded-4 py-4 mb-4">
                     <div class="card-headers border-0 py-4 px-4 pb-0 pt-1">
-                        <h4><i class="fa-regular fa-user text-primary me-2"></i>Basic info</h4>
+                        <h4><i class="fa-regular fa-user text-primary me-2"></i>Business info</h4>
                     </div>
                     <div class="card-body px-4">
-                        <form action="/became-an-agent/create-step3" method="post">
+                        <form action="/became-an-agent/create-step3" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
                             <div class="row g-3 g-sm-4 mt-0 mt-lg-2">
@@ -101,6 +101,10 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="userImg">Ifoto</label>
+                                        <input type="file" class="form-control" id="userImg" name="userImg">
+                                    </div>
                                 </div>
                                 @if ($errors->any())
                                 <div class="alert alert-danger">
@@ -111,7 +115,10 @@
                                     </ul>
                                 </div>
                                 @endif
-                                <button type="submit" class="btn btn-primary">Add agent Image</button>
+                                <div class="row">
+                                    <a type="button" href="/became-an-agent/create-step2" class="col-6 btn btn-warning">Back to Step 2</a>
+                                    <button type="submit" class="col-6 btn btn-primary">Next</button>
+                                </div>
                             </div>
                         </form>
                     </div>

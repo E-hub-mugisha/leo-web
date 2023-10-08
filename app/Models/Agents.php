@@ -28,6 +28,11 @@ class Agents extends Model
         'tinNumber',
         'businessCategory',
         'services',
+        'userImg',
+        'id_doc',
+        'rdb_certificate',
+        'certificateOfResidence',
+        'CriminalRecordCertificate',
         'terms',
         'acceptance'
     ];

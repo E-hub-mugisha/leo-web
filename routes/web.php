@@ -42,3 +42,22 @@ Route::get('/agent/profile', [App\Http\Controllers\AgentsController::class, 'acc
 Route::get('/services', function () {
     return view('services');
 });
+
+Route::get('/agent_network_accelerator', function () {
+    return view('services.ana');
+});
+Route::get('/agent_network_management', function () {
+    return view('services.anm');
+});
+Route::get('/community_agent_network', function () {
+    return view('services.can');
+});
+Route::get('/Distribution_to_the_last_Mile', function () {
+    return view('services.dlm');
+});
+Route::get('/Liquidity_Float_Management', function () {
+    return view('services.lfm');
+});
+Route::get('/Below_Line_Market_Activation', function () {
+    return view('services.blm');
+});
