@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{ asset('assets/assets/css/bd-wizard.css')}}">
-
-<section class="bg-light-seegreen">
+<link rel="stylesheet" href="{{ asset('assets/assets/css/bootstrap-select.min.css')}}">
+<section class="bg-light-blue">
     <div class="container">
         <form action="/became-an-agent/store" method="post" enctype="multipart/form-data">
             @csrf
@@ -210,62 +210,62 @@
                                     <ul class="no-ul-list d-flex align-items-center border rounded-2 px-3 py-3">
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="irembo" id="services" {{{ (isset($agent->status) && $agent->status == 'irembo') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="irembo" id="services" {{{ (isset($agent->status) && $agent->status == 'irembo') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="irembo">irembo</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="mango" id="services" {{{ (isset($agent->status) && $agent->status == 'mango') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="mango" id="services" {{{ (isset($agent->status) && $agent->status == 'mango') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="mango">mango</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="insurance_agency" id="services" {{{ (isset($agent->status) && $agent->status == 'insurance_agency') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="insurance_agency" id="services" {{{ (isset($agent->status) && $agent->status == 'insurance_agency') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="male">insurance_agency</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="spenn" id="services" {{{ (isset($agent->status) && $agent->status == 'spenn') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="spenn" id="services" {{{ (isset($agent->status) && $agent->status == 'spenn') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="spenn">spenn</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="sms_reselling" id="services" {{{ (isset($agent->status) && $agent->status == 'sms_reselling') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="sms_reselling" id="services" {{{ (isset($agent->status) && $agent->status == 'sms_reselling') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="male">sms_reselling</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="bk_agent" id="services" {{{ (isset($agent->status) && $agent->status == 'bk_agent') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="bk_agent" id="services" {{{ (isset($agent->status) && $agent->status == 'bk_agent') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="bk_agent">bk_agent</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="mobicash" id="services" {{{ (isset($agent->status) && $agent->status == 'mobicash') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="mobicash" id="services" {{{ (isset($agent->status) && $agent->status == 'mobicash') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="male">mobicash</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="commodities" id="services" {{{ (isset($agent->status) && $agent->status == 'commodities') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="commodities" id="services" {{{ (isset($agent->status) && $agent->status == 'commodities') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="commodities">commodities</label>
                                             </div>
                                         </li>
                                         <li class="me-3">
                                             <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="services" value="bpr_agent" id="services" {{{ (isset($agent->status) && $agent->status == 'bpr_agent') ? "checked" : "" }}}>
+                                                <input class="form-check-input" type="checkbox" name="services[]" value="bpr_agent" id="services" {{{ (isset($agent->status) && $agent->status == 'bpr_agent') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="male">bpr_agent</label>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label class="form-label" for="userImg">Ifoto</label>
+                                    <label class="form-label" for="userImg">Ifoto Yawe</label>
                                     <input type="file" class="form-control" id="userImg" name="userImg">
                                 </div>
                             </div>
@@ -307,7 +307,7 @@
                         <label class="form-label" for="userImg">ID document</label>
                         <input type="file" class="form-control" id="id_doc" name="id_doc">
                     </div>
-                    <div class="content-wrapper">
+                    <!-- <div class="content-wrapper">
                         <h4 class="section-heading mb-5">Review your Details</h4>
                         <h6 class="font-weight-bold">Personal Details</h6>
                         <p class="mb-4"><span id="enteredFirstName">Cha</span> <span id="enteredLastName">Ji-Hun C</span> <br>
@@ -317,7 +317,7 @@
                         <p class="mb-0"><span id="enteredDesignation">Junior Developer</span> - <span id="enteredDepartment">UI Development</span> <br>
                             Phone: <span id="enteredEmployeeNumber">JDUI36849</span> <br>
                             Email: <span id="enteredWorkEmailAddress">willms_abby@company.com</span></p>
-                    </div>
+                    </div> -->
                 </section>
                 <h3>
                     <div class="media">
@@ -341,12 +341,6 @@
                                             <div class="form-check form-check-inline mb-0">
                                                 <input class="form-check-input" type="radio" name="terms" value="yego" id="terms" {{{ (isset($agent->status) && $agent->status == 'yego') ? "checked" : "" }}}>
                                                 <label class="form-check-label" for="yego">Ndemeza ko nishyuye 20.000Rwf kuri momo code 363386 ibaruye kuri DISABILITY DIGITAL INCLUSION</label>
-                                            </div>
-                                        </li>
-                                        <li class="me-3">
-                                            <div class="form-check form-check-inline mb-0">
-                                                <input class="form-check-input" type="radio" name="terms" value="oya" id="terms" {{{ (isset($agent->status) && $agent->status == 'oya') ? "checked" : "" }}}>
-                                                <label class="form-check-label" for="oya">Ndemeza ko bazayakata kuri commission zanjye nintangira gukora</label>
                                             </div>
                                         </li>
                                     </ul>
@@ -399,5 +393,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="{{ asset('assets/assets/js/jquery.steps.min.js')}}"></script>
 <script src="{{ asset('assets/assets/js/bd-wizard.js')}}"></script>
+<script src="{{ asset('assets/assets/js/bootstrap-select.min.js')}}"></script>
 @include('includes.footer')
 @endsection

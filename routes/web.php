@@ -23,6 +23,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 Route::post('contact-us', [App\Http\Controllers\HomeController::class, 'store'])->name('contact.us.store');
+Route::get('send-email-pdf', [App\Http\Controllers\HomeController::class, 'index']);
+Route::post('/contact', [App\Http\Controllers\HomeController::class, 'sendEmail'])->name('send.email');
 Route::get('/became-an-agent', function () {
     return view('became-an-agent');
 });
@@ -38,6 +40,8 @@ Route::get('/became-an-agent/previewPage', [App\Http\Controllers\AgentsControlle
 Route::post('/became-an-agent/store', [App\Http\Controllers\AgentsController::class, 'store']);
 
 Route::get('/agent/profile', [App\Http\Controllers\AgentsController::class, 'accountProfile']);
+Route::post('api/fetch-states', [App\Http\Controllers\AgentsController::class, 'fetchState']);
+Route::post('api/fetch-cities', [App\Http\Controllers\AgentsController::class, 'fetchCity']);
 
 Route::get('/services', function () {
     return view('services');
@@ -61,3 +65,12 @@ Route::get('/Liquidity_Float_Management', function () {
 Route::get('/Below_Line_Market_Activation', function () {
     return view('services.blm');
 });
+Auth::routes();
+
+Route::get('/admin/dashboard', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/admin/agents', [App\Http\Controllers\HomeController::class, 'agentPage'])->name('agent');
+Route::get('/admin/agent/{id}',[App\Http\Controllers\HomeController::class, 'agentDetail'])->name('agent.detail');
+
+Route::get('/admin/partners', [App\Http\Controllers\HomeController::class, 'partnerPage'])->name('partner');
+Route::get('/admin/partner/{id}',[App\Http\Controllers\HomeController::class, 'partnerDetail'])->name('partner.detail');
+Route::post('/partner/store', [App\Http\Controllers\HomeController::class, 'partnerStore']);

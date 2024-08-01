@@ -5,7 +5,7 @@
 @include('includes.header')
 
 <!-- ============================ Breadcrumbs =========================== -->
-<section class="bg-cover" style="background:url(assets/img/work-5.jpg)no-repeat;" data-overlay="4">
+<section class="bg-cover" style="background:url(assets/img/banner.jpg)no-repeat;" data-overlay="4">
     <div class="ht-80"></div>
     <div class="container">
         <div class="row">
@@ -31,7 +31,7 @@
                 <p>Let’s create something extraordinary together</p>
 
                 
-                <form class="row g-4" id="contact-form" method="post" action="{{ route('contact.us.store') }}" role="form">
+                <form class="row g-4" id="contact-form" method="post" action="{{ route('send.email') }}" role="form">
                     {{ csrf_field() }}
                     <div class="messages">
                         @if(Session::has('success'))

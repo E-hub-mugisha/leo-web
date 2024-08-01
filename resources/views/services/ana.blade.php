@@ -6,7 +6,7 @@
 
 
 <!-- ============================ Hero Banner  Start================================== -->
-<div class="image-bottom-cover hero-header position-relative" style="background:#a70a29 url(assets/img/bg2.png)no-repeat;" data-overlay="0">
+<div class="image-bottom-cover hero-header position-relative" style="background:#202A4E url(assets/img/bg2.png)no-repeat;" data-overlay="0">
     <div class="container">
 
         <div class="row justify-content-center align-items-center">
@@ -24,7 +24,7 @@
 
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="position-relative mt-md-0 mt-4">
-                    <img class="d-block position-relative z-2 img-fluid" src="assets/img/info/digital-marketing.png" alt="Nicolas Black">
+                    <img class="d-block position-relative z-2 img-fluid" src="{{ asset('assets/img/image_banner.png')}}" alt="ana">
                 </div>
             </div>
         </div>
@@ -42,12 +42,12 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi">
                     <div class="position-relative">
-                        <img src="assets/img/class-men-1.png" class="img-fluid" alt="">
+                        <img src="assets/img/image5.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
                         <div class="dlick-img mb-2"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -83,11 +83,11 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4">
                     <div class="position-absolute start-0 bottom-0 pb-4 ps-4 z-1">
-                        <div class="dlick-img mb-2"><img src="assets/img/slip-1.png" class="img-fluid rounded-3" width="210" alt=""></div>
+                        <!-- <div class="dlick-img mb-2"><img src="assets/img/slip-1.png" class="img-fluid rounded-3" width="210" alt=""></div> -->
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/slip-2.png" class="img-fluid rounded-3" width="210" alt=""></div>
                     </div>
                     <div class="position-relative">
-                        <img src="assets/img/class-men-2.png" class="img-fluid" alt="">
+                        <img src="assets/img/image6.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -299,7 +299,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="position-relative exloi wow animated fadeInRight mt-md-0 mt-4">
                     <div class="position-relative ps-4 pb-4">
-                        <img src="assets/img/side-4.png" class="img-fluid rounded-3" alt="">
+                        <img src="assets/img/training.jpg" class="img-fluid rounded-3" alt="">
                     </div>
                     <div class="position-absolute bottom-0 start-0">
                         <img src="assets/img/at-2.png" class="img-fluid rounded-2 shadow" width="230" alt="">

@@ -3,7 +3,7 @@
     <div class="container">
 
         <div class="row align-items-center">
-            <div class="col-xxl-5 col-xl-4 col-lg-5 col-md-5">
+            <div class="col-xxl-5 col-xl-4 col-lg-4 col-md-4">
                 <div class="position-relative wow animated fadeInLeft">
                     <div class="label text-success bg-light-success d-inline-flex rounded-4 mb-2 font--medium"><span>Choose Killar</span></div>
                     <h2 class="fs-1 mb-3 mb-lg-3 lh-base">Local Agents Everywhere Across Rwanda</h2>
@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6 offset-xxl-2 offset-xl-2 offset-lg-1">
+            <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-8 offset-xxl-2 offset-xl-2 offset-lg-1">
                 <div class="row row-cols-1 row-cols-sm-2 g-xl-4 g-lg-4 g-4">
                     <div class="col">
                         <div class="card border-0 bg-light-success rounded-4 px-3 py-3 wow animated fadeInUp">

@@ -4,7 +4,7 @@
 
 @include('includes.header')
 <!-- ============================ Breadcrumbs =========================== -->
-<section class="bg-cover" style="background:url(assets/img/work-5.jpg)no-repeat;" data-overlay="4">
+<section class="bg-cover" style="background:url(assets/img/banner.jpg)no-repeat;" data-overlay="4">
     <div class="ht-80"></div>
     <div class="container">
         <div class="row">

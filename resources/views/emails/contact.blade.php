@@ -1,15 +1,8 @@
-@component('mail::message')
-<h2>Hey, It's me {{ $data->names }}</h2> 
-<br>
-    
-<strong>User details: </strong><br>
-<strong>Name: </strong>{{ $data->names }} <br>
-<strong>Email: </strong>{{ $data->email }} <br>
-<strong>Phone: </strong>{{ $data->phone }} <br>
-<strong>Subject: </strong>{{ $data->subject }} <br>
-<strong>Message: </strong>{{ $data->messages }} <br><br>
-  
-Thank you,
-
-{{ config('app.name') }}
-@endcomponent
+<h1>Contact Form Submission</h1>
+<!-- Embedding the logo -->
+<img src="{{ public_path('assets/img/logo.png') }}" alt="Company Logo" style="max-width: 200px;">
+<p>Name: {{ $names }}</p>
+<p>Email: {{ $email }}</p>
+<p>subject: {{ $subject }}</p>
+<p>phone: {{ $phone }}</p>
+<p>Message: {{ $messages }}</p>

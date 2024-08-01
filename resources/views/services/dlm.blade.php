@@ -6,7 +6,7 @@
 
 
 <!-- ============================ Hero Banner  Start================================== -->
-<div class="image-bottom-cover hero-header position-relative" style="background:#a70a29 url(assets/img/bg2.png)no-repeat;" data-overlay="0">
+<div class="image-bottom-cover hero-header position-relative" style="background:#202A4E url(assets/img/bg2.png)no-repeat;" data-overlay="0">
     <div class="container">
 
         <div class="row justify-content-center align-items-center">
@@ -42,12 +42,12 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi">
                     <div class="position-relative">
-                        <img src="assets/img/class-men-1.png" class="img-fluid" alt="">
+                        <img src="assets/img/image10.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
                         <div class="dlick-img mb-2"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 

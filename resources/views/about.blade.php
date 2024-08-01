@@ -5,7 +5,7 @@
 @include('includes.header')
 
 <!-- ============================ Breadcrumbs =========================== -->
-<section class="bg-cover" style="background:url(assets/img/work-5.jpg)no-repeat;" data-overlay="4">
+<section class="bg-cover" style="background:url(assets/img/banner.jpg)no-repeat;" data-overlay="4">
     <div class="ht-80"></div>
     <div class="container">
         <div class="row">
@@ -31,12 +31,12 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi">
                     <div class="position-relative">
-                        <img src="assets/img/class-men-1.png" class="img-fluid" alt="">
+                        <img src="assets/img/image1.png" class="img-fluid" alt="">
                     </div>
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
                         <div class="dlick-img mb-2"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -87,12 +87,12 @@
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4">
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4 z-1">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4 z-1">
                         <div class="dlick-img mb-2"><img src="assets/img/slip-1.png" class="img-fluid rounded-3" width="210" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/slip-2.png" class="img-fluid rounded-3" width="210" alt=""></div>
-                    </div>
+                    </div> -->
                     <div class="position-relative">
-                        <img src="assets/img/class-men-2.png" class="img-fluid" alt="">
+                        <img src="assets/img/image3.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative mt-md-0 mt-4">
-                    <img src="assets/img/seo-1.png" class="img-fluid" alt="">
+                    <img src="assets/img/image4.png" class="img-fluid" alt="">
                 </div>
             </div>
 
@@ -222,7 +222,7 @@
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative">
-                    <img src="assets/img/seo-2.png" class="img-fluid" alt="">
+                    <img src="assets/img/people-cartoon.png" class="img-fluid" alt="">
                 </div>
             </div>
 
@@ -243,6 +243,15 @@
 <div class="clearfix"></div>
 <!-- ============================ Reason For Love Us End ================================== -->
 
+<!--  ======================== our partners ========================= --> 
 @include('includes.partners')
+
+<!--  ======================== our partners ========================= --> 
+
+<!--  ======================== call to action ========================= --> 
+
+@include('includes.cta')
+
+<!--  ======================== call to action ========================= --> 
 
 @include('includes.footer')

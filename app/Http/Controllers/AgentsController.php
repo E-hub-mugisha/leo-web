@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Agents;
 use App\Models\Regions;
+use PDF;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class AgentsController extends Controller
 {
@@ -176,6 +179,35 @@ class AgentsController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'names' => 'required',
+            'nid' => 'required',
+            'gender' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'status' => 'required',
+            'education' => 'required',
+            'nextKinNames' => 'required',
+            'nextKinPhone' => 'required',
+            'province' => 'required',
+            'district' => 'required',
+            'sector' => 'required',
+            'cell' => 'required',
+            'village' => 'required',
+            'isibo' => 'required',
+            'businessNames' => 'required',
+            'tinNumber' => 'required',
+            'businessCategory' => 'required',
+            'services' => 'required',
+            'userImg' => 'required',
+            'id_doc' => 'required',
+            'rdb_certificate' => 'required',
+            'certificateOfResidence' => 'required',
+            'CriminalRecordCertificate' => 'required',
+            'terms' => 'required',
+            'acceptance' => 'required',
+        ]);
+
         $agent = new Agents();
         $agent->names = $request->input('names');
         $agent->nid = $request->input('nid');
@@ -195,7 +227,8 @@ class AgentsController extends Controller
         $agent->businessNames = $request->input('businessNames');
         $agent->tinNumber = $request->input('tinNumber');
         $agent->businessCategory = $request->input('businessCategory');
-        $agent->services = $request->input('services');
+        $selectedServices = $request->input('services', []);
+        $agent->services = implode(',', $selectedServices);
         $agent->terms = $request->input('terms');
         $agent->acceptance = $request->input('acceptance');
 
@@ -231,6 +264,17 @@ class AgentsController extends Controller
         }
 
         $agent->save();
-        return redirect('/');
+
+        // Generate PDF
+        $pdf = PDF::loadView('emails.contract', $request->all());
+
+        // Send email
+        Mail::send('emails.contract', $request->all(), function ($message) use ($pdf) {
+            $message->to('kabosierik@gmail.com')
+                ->subject('Contract Form Submission')
+                ->attachData($pdf->output(), 'contract.pdf');
+        });
+
+        return redirect()->back();
     }
 }

@@ -4,7 +4,7 @@
 
 @include('includes.header')
 <!-- ============================ Hero Banner  Start================================== -->
-<div class="image-cover hero-header position-relative" style="background:#ffffff url(assets/img/mid-img-2.jpg)no-repeat;" data-overlay="6">
+<div class="image-cover hero-header position-relative" style="background:#202A4E url(assets/img/banner.jpg)no-repeat;" data-overlay="9">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -22,7 +22,7 @@
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-xl-offset-1 col-lg-offset-1">
                 <div class="position-relative wow animated fadeInRight">
-                    <img class="d-block position-relative z-2 img-fluid" src="assets/img/mob-app.png" alt="Nicolas Black">
+                    <img class="d-block position-relative z-2 img-fluid" src="assets/img/image_banner.png" alt="Nicolas Black">
                 </div>
             </div>
         </div>
@@ -38,12 +38,12 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi">
                     <div class="position-relative">
-                        <img src="assets/img/class-men-1.png" class="img-fluid" alt="">
+                        <img src="assets/img/image1.png" class="img-fluid" alt="">
                     </div>
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4">
                         <div class="dlick-img mb-2"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/lists-2.png" class="img-fluid rounded-2" width="190" alt=""></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -80,12 +80,12 @@
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4">
-                    <div class="position-absolute start-0 bottom-0 pb-4 ps-4 z-1">
+                    <!-- <div class="position-absolute start-0 bottom-0 pb-4 ps-4 z-1">
                         <div class="dlick-img mb-2"><img src="assets/img/slip-1.png" class="img-fluid rounded-3" width="210" alt=""></div>
                         <div class="dlick-img mt-1 ps-4"><img src="assets/img/slip-2.png" class="img-fluid rounded-3" width="210" alt=""></div>
-                    </div>
+                    </div> -->
                     <div class="position-relative">
-                        <img src="assets/img/class-men-2.png" class="img-fluid" alt="">
+                        <img src="assets/img/about.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -144,12 +144,12 @@
 <section class="pt-8">
     <div class="container">
 
-        <div class="row justify-content-between align-items-center mb-3">
+        <div class="row justify-content-between align-items-center mb-8">
 
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi">
                     <div class="position-relative">
-                        <img src="assets/img/pay-1.png" class="img-fluid" alt="">
+                        <img src="assets/img/image_banner.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4">
                     <div class="position-relative">
-                        <img src="assets/img/pay-2.png" class="img-fluid" alt="">
+                        <img src="assets/img/mob-app.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>

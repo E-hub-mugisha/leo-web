@@ -6,13 +6,13 @@
     <div class="container">
         <nav id="navigation" class="navigation navigation-landscape">
             <div class="nav-header">
-                <a class="nav-brand static-logo" href="#"><img src="{{ asset('assets/img/logo-light.png')}}" class="logo" alt=""></a>
-                <a class="nav-brand fixed-logo" href="#"><img src="{{ asset('assets/img/logo.png')}}" class="logo" alt=""></a>
+                <a class="nav-brand static-logo" href="/"><img src="{{ asset('assets/img/logo-light.png')}}" class="logo" alt=""></a>
+                <a class="nav-brand fixed-logo" href="/"><img src="{{ asset('assets/img/logo.png')}}" class="logo" alt=""></a>
                 <div class="nav-toggle"></div>
                 <div class="mobile_nav">
                     <ul>
                         <li>
-                            <a href="JavaScript:Void(0);" data-bs-toggle="modal" data-bs-target="#login" class="btn btn-info"><i class="fas fa-sign-in-alt me-2"></i>Log In</a>
+                            <a href="/became-an-agent"  class="btn btn-info"><i class="fas fa-sign-in-alt me-2"></i>Became an Agent</a>
                         </li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
                             </li>
                             <h6 class="lh-base fs-6 font--bold m-0">Agent Section</h6>
                             <li>
-                                <a href="home-7.html">
+                                <a href="#">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-primary text-primary fs-4"><i class="fa-brands fa-shopify"></i></div>
                                         <div class="mega-last ps-2">
@@ -98,7 +98,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-8.html">
+                                <a href="#">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-orange text-orange fs-4"><i class="fa-solid fa-mobile-screen-button"></i></div>
                                         <div class="mega-last ps-2">
@@ -108,7 +108,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-9.html">
+                                <a href="#">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-info text-info fs-4"><i class="fa-brands fa-codepen"></i></div>
                                         <div class="mega-last ps-2">
@@ -118,7 +118,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-10.html">
+                                <a href="#">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-success text-success fs-4"><i class="fa-solid fa-layer-group"></i></div>
                                         <div class="mega-last ps-2">
@@ -128,7 +128,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="home-11.html">
+                                <a href="#">
                                     <div class="mega-advance-menu">
                                         <div class="mega-first square--50 rounded-2 bg-light-purple text-purple fs-4"><i class="fa-solid fa-lightbulb"></i></div>
                                         <div class="mega-last ps-2">
@@ -153,7 +153,7 @@
 
                 <ul class="nav-menu nav-menu-social align-to-right">
                     <li>
-                        <a href="JavaScript:Void(0);" data-bs-toggle="modal" data-bs-target="#login"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                        <!-- <a href="JavaScript:Void(0);" data-bs-toggle="modal" data-bs-target="#login"><i class="fas fa-sign-in-alt me-2"></i>Login</a> -->
                     </li>
                     <li class="list-buttons light ms-2">
                         <a href="/became-an-agent">Became an agent</a>

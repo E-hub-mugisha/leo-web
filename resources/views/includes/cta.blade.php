@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="position-absolute bottom-0 end-0 me-5 z-0 d-md-flex d-none wow animated fadeInRight">
-        <img src="assets/img/men-3.png" alt="SVG" width="350">
+        <img src="assets/img/about.png" alt="SVG" width="350">
     </div>
 </section>
 <!-- ============================ Call To Action End ================================== -->
