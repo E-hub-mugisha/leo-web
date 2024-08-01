@@ -6,7 +6,7 @@
             <div class="col-xl-7 col-lg-7 col-md-11 mb-3">
                 <div class="sec-heading text-center wow animated fadeInUp">
                     <div class="label text-success bg-light-success d-inline-flex rounded-4 mb-2 font--medium"><span>Services</span></div>
-                    <h2 class="mb-1">Discover More About Our Services</h2>
+                    <h2 class="mb-1">Discover <span style="color: #F8882B;">More About</span> Our Services</h2>
                     <p class="test-muted fs-6">we take pride in offering a diverse range of solutions tailored to meet your needs. Explore our service categories below to find the perfect solution for you.</p>
                 </div>
             </div>

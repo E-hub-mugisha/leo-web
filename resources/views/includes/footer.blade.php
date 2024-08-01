@@ -16,7 +16,6 @@
                                 <li><a href="JavaScript:Void(0);"><i class="fa-brands fa-linkedin"></i></a></li>
                                 <li><a href="JavaScript:Void(0);"><i class="fa-brands fa-google-plus"></i></a></li>
                                 <li><a href="JavaScript:Void(0);"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="JavaScript:Void(0);"><i class="fa-brands fa-dribbble"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +70,7 @@
             <div class="row align-items-center justify-content-between">
 
                 <div class="col-xl-4 col-lg-4 col-md-4">
-                    <p class="mb-0">© 2023 DDIN</p>
+                    <p class="mb-0">DDIN © <?php echo date("Y"); ?></p>
                 </div>
 
                 <div class="col-xl-8 col-lg-8 col-md-8">

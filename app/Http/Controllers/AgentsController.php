@@ -208,73 +208,80 @@ class AgentsController extends Controller
             'acceptance' => 'required',
         ]);
 
-        $agent = new Agents();
-        $agent->names = $request->input('names');
-        $agent->nid = $request->input('nid');
-        $agent->gender = $request->input('gender');
-        $agent->phone = $request->input('phone');
-        $agent->email = $request->input('email');
-        $agent->status = $request->input('status');
-        $agent->education = $request->input('education');
-        $agent->nextKinNames = $request->input('nextKinNames');
-        $agent->nextKinPhone = $request->input('nextKinPhone');
-        $agent->province = $request->input('province');
-        $agent->district = $request->input('district');
-        $agent->sector = $request->input('sector');
-        $agent->cell = $request->input('cell');
-        $agent->village = $request->input('village');
-        $agent->isibo = $request->input('isibo');
-        $agent->businessNames = $request->input('businessNames');
-        $agent->tinNumber = $request->input('tinNumber');
-        $agent->businessCategory = $request->input('businessCategory');
-        $selectedServices = $request->input('services', []);
-        $agent->services = implode(',', $selectedServices);
-        $agent->terms = $request->input('terms');
-        $agent->acceptance = $request->input('acceptance');
+        try {
 
-        if ($userImg = $request->file('userImg')) {
-            $destinationPath = 'image/';
-            $profileImage = date('YmdHis') . "." . $userImg->getClientOriginalExtension();
-            $userImg->move($destinationPath, $profileImage);
-            $agent->userImg = $profileImage;
-        }
-        if ($id_doc = $request->file('id_doc')) {
-            $destinationPath = 'id document/';
-            $profileId = date('YmdHis') . "." . $id_doc->getClientOriginalExtension();
-            $id_doc->move($destinationPath, $profileId);
-            $agent->id_doc = $profileId;
-        }
-        if ($rdb_certificate = $request->file('rdb_certificate')) {
-            $destinationPath = 'rdb_certificate/';
-            $profileRdb = date('YmdHis') . "." . $rdb_certificate->getClientOriginalExtension();
-            $rdb_certificate->move($destinationPath, $profileRdb);
-            $agent->rdb_certificate = $profileRdb;
-        }
-        if ($certificateOfResidence = $request->file('certificateOfResidence')) {
-            $destinationPath = 'certificate_Residence/';
-            $profileCr = date('YmdHis') . "." . $certificateOfResidence->getClientOriginalExtension();
-            $certificateOfResidence->move($destinationPath, $profileCr);
-            $agent->certificateOfResidence = $profileCr;
-        }
-        if ($CriminalRecordCertificate = $request->file('CriminalRecordCertificate')) {
-            $destinationPath = 'certificate_Criminal/';
-            $profileCriminal = date('YmdHis') . "." . $CriminalRecordCertificate->getClientOriginalExtension();
-            $CriminalRecordCertificate->move($destinationPath, $profileCriminal);
-            $agent->CriminalRecordCertificate = $profileCriminal;
-        }
+            $agent = new Agents();
+            $agent->names = $request->input('names');
+            $agent->nid = $request->input('nid');
+            $agent->gender = $request->input('gender');
+            $agent->phone = $request->input('phone');
+            $agent->email = $request->input('email');
+            $agent->status = $request->input('status');
+            $agent->education = $request->input('education');
+            $agent->nextKinNames = $request->input('nextKinNames');
+            $agent->nextKinPhone = $request->input('nextKinPhone');
+            $agent->province = $request->input('province');
+            $agent->district = $request->input('district');
+            $agent->sector = $request->input('sector');
+            $agent->cell = $request->input('cell');
+            $agent->village = $request->input('village');
+            $agent->isibo = $request->input('isibo');
+            $agent->businessNames = $request->input('businessNames');
+            $agent->tinNumber = $request->input('tinNumber');
+            $agent->businessCategory = $request->input('businessCategory');
+            $selectedServices = $request->input('services', []);
+            $agent->services = implode(',', $selectedServices);
+            $agent->terms = $request->input('terms');
+            $agent->acceptance = $request->input('acceptance');
 
-        $agent->save();
+            if ($userImg = $request->file('userImg')) {
+                $destinationPath = 'image/';
+                $profileImage = date('YmdHis') . "." . $userImg->getClientOriginalExtension();
+                $userImg->move($destinationPath, $profileImage);
+                $agent->userImg = $profileImage;
+            }
+            if ($id_doc = $request->file('id_doc')) {
+                $destinationPath = 'id document/';
+                $profileId = date('YmdHis') . "." . $id_doc->getClientOriginalExtension();
+                $id_doc->move($destinationPath, $profileId);
+                $agent->id_doc = $profileId;
+            }
+            if ($rdb_certificate = $request->file('rdb_certificate')) {
+                $destinationPath = 'rdb_certificate/';
+                $profileRdb = date('YmdHis') . "." . $rdb_certificate->getClientOriginalExtension();
+                $rdb_certificate->move($destinationPath, $profileRdb);
+                $agent->rdb_certificate = $profileRdb;
+            }
+            if ($certificateOfResidence = $request->file('certificateOfResidence')) {
+                $destinationPath = 'certificate_Residence/';
+                $profileCr = date('YmdHis') . "." . $certificateOfResidence->getClientOriginalExtension();
+                $certificateOfResidence->move($destinationPath, $profileCr);
+                $agent->certificateOfResidence = $profileCr;
+            }
+            if ($CriminalRecordCertificate = $request->file('CriminalRecordCertificate')) {
+                $destinationPath = 'certificate_Criminal/';
+                $profileCriminal = date('YmdHis') . "." . $CriminalRecordCertificate->getClientOriginalExtension();
+                $CriminalRecordCertificate->move($destinationPath, $profileCriminal);
+                $agent->CriminalRecordCertificate = $profileCriminal;
+            }
 
-        // Generate PDF
-        $pdf = PDF::loadView('emails.contract', $request->all());
+            $agent->save();
 
-        // Send email
-        Mail::send('emails.contract', $request->all(), function ($message) use ($pdf) {
-            $message->to('kabosierik@gmail.com')
-                ->subject('Contract Form Submission')
-                ->attachData($pdf->output(), 'contract.pdf');
-        });
+            // Generate PDF
+            $pdf = PDF::loadView('emails.contract', $request->all());
 
-        return redirect()->back();
+            // Send email
+            Mail::send('emails.contract', $request->all(), function ($message) use ($pdf) {
+                $message->to('kabosierik@gmail.com')
+                    ->subject('Agent Registration Submission')
+                    ->attachData($pdf->output(), 'contract.pdf');
+            });
+
+            return redirect()->back();
+
+        } catch (\Exception $e) {
+            // On error
+            return redirect()->back()->with('error', 'Error submitting form. Please try again.');
+        }
     }
 }

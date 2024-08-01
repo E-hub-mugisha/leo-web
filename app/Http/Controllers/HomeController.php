@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\Agents;
 use App\Models\Contact;
 use App\Models\Partners;
@@ -65,26 +66,21 @@ class HomeController extends Controller
         $request->validate([
             'names' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|digits:10|numeric',
+            'phone' => 'required',
             'subject' => 'required',
-            'messages' => 'required'
+            'messages' => 'required',
         ]);
 
-        
+        $details = [
+            'names' => $request->names,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'subject' => $request->subject,
+            'messages' => $request->messages,
+        ];
 
-        // Generate PDF
-        $pdf = PDF::loadView('emails.contact', $request->all());
+        Mail::to('kabosierik@gmail.com')->send(new ContactMail($details));
 
-        // Send email
-        Mail::send([], [], function ($message) use ($pdf) {
-            $message->to('kabosierik@gmail.com')
-            ->cc('kericmugisha@gmail.com')
-                ->subject('Contact Form Submission')
-                ->attachData($pdf->output(), 'contact.pdf');
-        });
-
-        Contact::create($request->all());
-
-        return redirect()->back();
+        return back()->with('success', 'Your message has been sent!');
     }
 }

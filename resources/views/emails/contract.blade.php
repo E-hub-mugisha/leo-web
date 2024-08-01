@@ -9,13 +9,10 @@
 
 <p><strong>1. Position:</strong> Employee is hired for the position of <?php foreach ($services as $key => $value) {
                                                                             $services[$key] = htmlspecialchars($value);
-                                                                            echo "<strong>$key:</strong> " . $value . "<br>";
+                                                                            echo $value . ",";
                                                                         } ?></p>
 
-<p><strong>2. Start Date:</strong> Employee's employment with the Company will commence on <script>
-        date = new Date().toLocaleDateString();
-        document.write(date);
-    </script>.</p>
+<p><strong>2. Start Date:</strong> Employee's employment with the Company will commence on: <span id="current-date"></span></p>
 
 <p><strong>3. Terms and Conditions:</strong> Employee agrees to abide by the terms and conditions set forth in this Contract.</p>
 
@@ -69,10 +66,12 @@
 <p><strong>Company:</strong> DDIN</p>
 <p><strong>Employee:</strong> {{ $names }}</p>
 
-<p><strong>Date:</strong>
-    <script>
-        date = new Date().toLocaleDateString();
-        document.write(date);
-    </script>
-</p>
+<p><strong>Date:</strong><span id="current-date"></span></p>
 <img src="{{ public_path('assets/img/signature.png') }}" alt="Company Logo" style="max-width: 200px;">
+
+<script>
+    // JavaScript to insert the current date
+    const currentDate = new Date();
+    const dateString = currentDate.toDateString(); // Format the date as a string
+    document.getElementById('current-date').innerText = dateString;
+</script>

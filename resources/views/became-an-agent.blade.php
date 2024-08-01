@@ -98,7 +98,7 @@
                     <div class="call-action-forms">
                         <div class="btns-clasic mt-5 mb-3">
                             <div class="btn-groupss">
-                                <a href="JavaScript:Void(0);" class="btn btn-lg btn-success font--medium px-lg-4 px-xl-5 mx-2 my-2">How It Work</a>
+                                <a href="JavaScript:Void(0);" class="btn btn-lg btn-success border-light font--medium px-lg-4 px-xl-5 mx-2 my-2">How It Work</a>
                                 <a href="JavaScript:Void(0);" class="btn btn-lg btn-whites text-success font--medium px-lg-4 px-xl-5 mx-2 my-2">Discover More..<i class="fa-solid fa-circle-play ms-2"></i></a>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
 
                 <div class="call-action-thumb d-lg-block d-none">
                     <div class="call-action-caption">
-                        <img src="assets/img/apps.png" class="img-fluid" alt="img app">
+                        <img src="assets/img/mob-app.png" class="img-fluid" alt="img app">
                     </div>
                 </div>
 
@@ -145,7 +145,7 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4 wow animated fadeInRight">
                     <div class="position-relative">
-                        <img src="assets/img/side-3.png" class="img-fluid" alt="">
+                        <img src="assets/img/image1.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                 <div class="position-relative exloi wow animated fadeInLeft">
                     <div class="position-relative">
-                        <img src="assets/img/side-4.png" class="img-fluid" alt="">
+                        <img src="assets/img/image3.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>

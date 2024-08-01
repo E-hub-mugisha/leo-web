@@ -4,12 +4,12 @@
 
 @include('includes.header')
 <!-- ============================ Hero Banner  Start================================== -->
-<div class="image-cover hero-header position-relative" style="background:#202A4E url(assets/img/banner.jpg)no-repeat;" data-overlay="9">
+<!-- <div class="image-cover hero-header position-relative" style="background:#202A4E url(assets/img/banner.jpg)no-repeat;" data-overlay="9">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="elcoss-excort mb-5">
-                    <h1 class="mb-4">A decentralized <br />agent network across the market.</h1>
+                    <h1 class="mb-4"><span style="color: #F8882B;">A decentralized</span> <br />agent network across the market.</h1>
                     <p class="fs-5 fw-light fs-mob">This network comprises decentralized agents strategically positioned throughout the market, working collaboratively to achieve their objectives.</p>
                 </div>
                 <div class="btns-clasic mt-5 mb-3">
@@ -27,7 +27,8 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+@include('includes.banner')
 <!-- ============================ Hero Banner End ================================== -->
 <!-- ============================ Reason For Love Us Start ================================== -->
 <section class="pt-8">
@@ -50,14 +51,14 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="position-relative exloi mt-md-0 mt-4">
                     <div class="exloi-caption">
-                        <div class="label text-danger bg-light-danger d-inline-flex rounded-4 mb-2 font--medium"><span>who we are</span></div>
-                        <h2 class="mb-3 lh-base">Agent Network with 3000+ Experts</h2>
+                        <div class="label text-primary bg-light-warning d-inline-flex rounded-4 mb-2 font--medium"><span>who we are</span></div>
+                        <h2 class="mb-3 lh-base">Agent Network with<span style="color: #F8882B;"> 4000+ Experts</span></h2>
                         <p class="mb-0 fs-5 fw-light">DDIN serves as a management platform for a network of independent agents located throughout the country.
 
                             We bring together various services offered by different institutions, organizations or companies onto a single platform. </p>
 
                         <div class="sml-butns mt-5">
-                            <a href="/about" class="btn btn-light-danger font--medium rounded-5">Explore more<i class="fa-regular fa-circle-right ms-2"></i></a>
+                            <a href="/about" class="btn btn-light-warning font--medium rounded-5">Explore more<i class="fa-regular fa-circle-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -70,9 +71,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="position-relative exloi py-lg-0 pb-4">
                     <div class="exloi-caption">
-                        <div class="label text-danger bg-light-danger d-inline-flex rounded-4 mb-2 font--medium"><span>we stand</span></div>
-                        <h2 class="mb-3 lh-base">DDIN ranks among the foremost agent network companies in Rwanda</h2>
-                        <p class="mb-0 fw-light fs-5">DDIN stands as the top agent network company in Rwanda, boasting 3000+ seasoned representatives countrywide. We bring together a variety of services from various organizations onto a single, unified platform.</p>
+                        <div class="label text-danger bg-light-warning d-inline-flex rounded-4 mb-2 font--medium"><span>we stand</span></div>
+                        <h2 class="mb-3 lh-base"><span style="color: #F8882B;">DDIN ranks among the foremost </span> network companies in Rwanda</h2>
+                        <p class="mb-0 fw-light fs-5">DDIN stands as the top agent network company in Rwanda, boasting 4000+ seasoned representatives countrywide. We bring together a variety of services from various organizations onto a single, unified platform.</p>
 
                     </div>
                 </div>
@@ -111,7 +112,7 @@
                     <div class="exljk-icon text-warning fs-2"><i class="fa-regular fa-clock"></i></div>
                     <div class="exljk-caps ps-3">
                         <h5 class="text-light fw-semibold">Time Saving</h5>
-                        <p class="m-0 text-light lh-base opacity-75">Usually, we prefer the real thing, wine without sulfur based</p>
+                        <p class="m-0 text-light lh-base opacity-75">Our efficient agent network streamlines transactions, saving you valuable time and making it easier.</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +122,7 @@
                     <div class="exljk-icon text-warning fs-2"><i class="fa-solid fa-shield-heart"></i></div>
                     <div class="exljk-caps ps-3">
                         <h5 class="text-light fw-semibold">Secure Payment</h5>
-                        <p class="m-0 text-light lh-base opacity-75">Usually, we prefer the real thing, wine without sulfur based</p>
+                        <p class="m-0 text-light lh-base opacity-75">With our robust agent network, your transactions are handled securely and reliably, ensuring peace of mind</p>
                     </div>
                 </div>
             </div>
@@ -130,7 +131,7 @@
                     <div class="exljk-icon text-warning fs-2"><i class="fa-solid fa-headset"></i></div>
                     <div class="exljk-caps ps-3">
                         <h5 class="text-light fw-semibold">24x7 Support</h5>
-                        <p class="m-0 text-light lh-base opacity-75">Usually, we prefer the real thing, wine without sulfur based</p>
+                        <p class="m-0 text-light lh-base opacity-75">Our dedicated agent network provides round-the-clock support, ensuring you can get help whenever you need it.</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +159,7 @@
                 <div class="position-relative exloi mt-md-0 mt-4">
                     <div class="exloi-caption">
                         <div class="label text-success bg-light-success d-inline-flex rounded-4 mb-2 font--medium"><span>integration</span></div>
-                        <h2 class="mb-3 lh-base">DDIN aggregates multiple services from different institutions into one integrated platform.</h2>
+                        <h2 class="mb-3 lh-base">DDIN aggregates <span style="color: #F8882B;">multiple services</span> from different institutions into <span style="color: #F8882B;">one integrated platform.</span></h2>
 
                         <div class="sml-butns mt-5">
                             <a href="#" class="btn btn-light-success font--medium rounded-5">Learn more<i class="fa-regular fa-circle-right ms-2"></i></a>
@@ -175,7 +176,7 @@
                 <div class="position-relative exloi py-lg-0 pb-4">
                     <div class="exloi-caption">
                         <!-- <div class="label text-success bg-light-success d-inline-flex rounded-4 mb-2 font--medium"><span>Recieving Money</span></div> -->
-                        <h2 class="mb-3 lh-base">We help decentralize your services to end customers through our independent agent network across the country</h2>
+                        <h2 class="mb-3 lh-base">We help <span style="color: #F8882B;">decentralize</span> your services to end customers through our independent <span style="color: #F8882B;">agent network</span> across the country</h2>
 
                         <div class="sml-butns mt-5">
                             <a href="/contact" class="btn btn-light-success font--medium rounded-5">schedule a call<i class="fa-regular fa-circle-right ms-2"></i></a>
@@ -204,3 +205,5 @@
 @include('includes.cta')
 
 @include('includes.footer')
+
+@endsection
